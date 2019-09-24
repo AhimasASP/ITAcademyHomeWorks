@@ -6,36 +6,36 @@ namespace Task_01
     {
         static void Main(string[] args)
         {
-            //explicit casting
-
-            int a = 255;
+            double d = 123456789123.12D;
+            int i = 2147483647;
+            int j;
+            short s;
             byte b;
-            b = (byte)a;
-
-            long l = 123456789L;
-            int i;
-            i = (int)l;
-
-            double d = 3.14F;
             float f;
+            object o;
+
+            //explicit casting - possible distortion of value
+
+            s = (short)i;
+            b = (byte)i;
             f = (float)d;
 
-            Console.WriteLine("Expliocit casting: " + "\n" + i + "\n" + b + "\n" + f);
-            Console.ReadKey();
+            
+            //implicit casting - safe casting method
 
-            //implicit casting
+            b = 255;
+            f = 123456.5F;
+            i = b;
+            s = b;
+            d = f;
 
-            short s = 256;
-            long k = 0;
-            k = s;
+            //Boxing
 
-            byte u = 255;
-            int z = 0;
-            z = u;
+            o = i;
 
+            //Unboxing
 
-
-
+            j = (int)o;
         }
     }
 }
