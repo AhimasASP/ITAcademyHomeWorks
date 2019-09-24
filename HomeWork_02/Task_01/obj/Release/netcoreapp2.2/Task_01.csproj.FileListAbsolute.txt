@@ -1,0 +1,10 @@
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\bin\Release\netcoreapp2.2\Task_01.deps.json
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\bin\Release\netcoreapp2.2\Task_01.runtimeconfig.json
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\bin\Release\netcoreapp2.2\Task_01.runtimeconfig.dev.json
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\bin\Release\netcoreapp2.2\Task_01.dll
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\bin\Release\netcoreapp2.2\Task_01.pdb
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\obj\Release\netcoreapp2.2\Task_01.csproj.CoreCompileInputs.cache
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\obj\Release\netcoreapp2.2\Task_01.AssemblyInfoInputs.cache
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\obj\Release\netcoreapp2.2\Task_01.AssemblyInfo.cs
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\obj\Release\netcoreapp2.2\Task_01.dll
+E:\Drive\Develop\Project\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_02\Task_01\obj\Release\netcoreapp2.2\Task_01.pdb
