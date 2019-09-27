@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HW_03_Task_01
 {
@@ -25,7 +23,6 @@ namespace HW_03_Task_01
             return value;
         }
         public int SimpleAdditionTwoValues(char sign)
-
         {
             int intValue;
             Console.WriteLine("\nPlease enter the first value");

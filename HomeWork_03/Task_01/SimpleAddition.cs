@@ -4,7 +4,6 @@ namespace HW_03_Task_01
 {
     class SimpleAddition
     {
-
         static void Main(string[] args)
         {
             DigitAddition addition = new DigitAddition();
