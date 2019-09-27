@@ -8,9 +8,9 @@ namespace HW_03_Task_01
         static void Main(string[] args)
         {
             DigitAddition addition = new DigitAddition();
-            Console.WriteLine("\tWelcome to the HW_03_Task_01 main menue" +
+            Console.WriteLine("\tWelcome to the HW_03_Task_01 main menu" +
                               "\nNow you should to enter two simple values for addition operation.");
-            int value = addition.SimpleAdditionTwoValues();
+            int value = addition.SimpleAdditionTwoValues('+');
             Console.WriteLine("Result of simple addition is: " + value);
         }
     }

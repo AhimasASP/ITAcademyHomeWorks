@@ -24,16 +24,30 @@ namespace HW_03_Task_01
             }
             return value;
         }
-        public int SimpleAdditionTwoValues()
+        public int SimpleAdditionTwoValues(char sign)
 
         {
             int intValue;
-            int result;
             Console.WriteLine("\nPlease enter the first value");
             Console.Write((intValue = CheckForDigit()) + " - first value;\nPlease enter the second value\n");
-            result = intValue;
+            int result = intValue;
             Console.WriteLine((intValue = CheckForDigit()) + " - second value;");
-            return result += intValue;
+            switch (sign)
+            {
+                case '+':
+                    result +=intValue;
+                    break;
+                case '-':
+                    result -= intValue;
+                    break;
+                case '*':
+                    result *= intValue;
+                    break;
+                case '/':
+                    result /= intValue;
+                    break;
+            }
+            return result;
         }
     }
 }
