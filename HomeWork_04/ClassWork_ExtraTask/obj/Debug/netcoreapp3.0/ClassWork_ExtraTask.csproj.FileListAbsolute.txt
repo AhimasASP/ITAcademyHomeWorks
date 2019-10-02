@@ -1,0 +1,11 @@
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.exe
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.deps.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.runtimeconfig.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.runtimeconfig.dev.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\bin\Debug\netcoreapp3.0\ClassWork_ExtraTask.pdb
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\obj\Debug\netcoreapp3.0\ClassWork_ExtraTask.csprojAssemblyReference.cache
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\obj\Debug\netcoreapp3.0\ClassWork_ExtraTask.AssemblyInfoInputs.cache
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\obj\Debug\netcoreapp3.0\ClassWork_ExtraTask.AssemblyInfo.cs
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\obj\Debug\netcoreapp3.0\ClassWork_ExtraTask.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_04\ClassWork_ExtraTask\obj\Debug\netcoreapp3.0\ClassWork_ExtraTask.pdb
