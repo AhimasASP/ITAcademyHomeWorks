@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
         "outputPath": "E:\\Projects\\C#\\IT-Academy\\ITAcademyHomeWorks\\HomeWork_04\\HW_04_Task_01\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
