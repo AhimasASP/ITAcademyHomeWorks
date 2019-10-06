@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
-using System.Text;
 
 namespace HW_06_Task_01
 {
