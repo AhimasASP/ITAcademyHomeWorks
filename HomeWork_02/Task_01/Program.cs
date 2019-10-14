@@ -14,7 +14,7 @@ namespace Task_01
             float f;
             object o;
 
-            //explicit casting - possible distortion of value
+            //explicit casting - possible distortion of value!
 
             s = (short)i;
             b = (byte)i;
