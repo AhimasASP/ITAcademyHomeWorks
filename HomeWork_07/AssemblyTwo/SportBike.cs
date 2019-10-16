@@ -29,7 +29,7 @@
 
         public void ResetVin()
         {
-            //base.ResetVin(); - ()
+            //base.ResetVin(); - (private protected) not available for derived class 
         }
     }
 }

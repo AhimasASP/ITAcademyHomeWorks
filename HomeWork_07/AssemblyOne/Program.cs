@@ -7,25 +7,29 @@ namespace AssemblyOne
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to HomeWork_07 main menu!");
-            Motorcycle moto = new Motorcycle();
+            Motorcycle motorcycle = new Motorcycle();
 
             //public method
-            moto.StartEngine();
+            motorcycle.StartEngine();
 
             //protected method
-            //moto.CheckEngine(); - (protected) not available for instance? only for derived classes
+            //motorcycle.CheckEngine(); - (protected) not available for instance? only for derived classes
 
             //internal method
-            moto.ChangeColor();
+            motorcycle.ChangeColor();
 
             //protected internal method
-            moto.Beep();
+            motorcycle.Beep();
 
             //private method
-            //moto.ChangeVin(); - (private) available only in body of class or struct in witch it declare
+            //motorcycle.ChangeVin(); - (private) available only in body of class or struct in witch it declare
 
             //private protected
-            //moto.ResetVin(); - (private protected) available only in body of class or struct in witch it declare or in body of derived class
+            //motorcycle.ResetVin(); - (private protected) available only in body of class or struct in witch it declare or in body of derived class
+
+            GarageMadeBike garageBike = new GarageMadeBike();
+
+            garageBike.ResetVin(); // we can get access to private protected method by derived class instance in tha same namespace
         }
     }
 }
