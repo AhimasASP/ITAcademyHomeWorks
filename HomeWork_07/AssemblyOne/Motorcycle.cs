@@ -9,6 +9,7 @@ namespace AssemblyOne
         private string vinCode = "ZFA22500000089618";
         protected int odometer = 30_000;
         internal string color = "red";
+        
 
 
         public void StartEngine()
@@ -28,8 +29,10 @@ namespace AssemblyOne
             Console.WriteLine("\aBEEEEEEEEEP!");
         }
 
-        internal void ChangeColor(string color)
+        internal void ChangeColor()
         {
+            Console.WriteLine("Please enter new color");
+            string color = Console.ReadLine();
             switch (color)
             {
                 case "red":
@@ -52,6 +55,16 @@ namespace AssemblyOne
             }
             Console.WriteLine("Current color is " + color);
             Console.ForegroundColor = ConsoleColor.White;
+        }
+
+        private void ChangeVIN()
+        {
+            Console.WriteLine("Please enter new VIN code");
+            vinCode = Console.ReadLine();
+        }
+        private protected void ResetVIN()
+        {
+
         }
     }
 }
