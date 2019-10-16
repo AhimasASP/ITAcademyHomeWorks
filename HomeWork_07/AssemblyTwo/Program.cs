@@ -6,7 +6,10 @@ namespace AssemblyTwo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Now we can see the derived class instance");
+            SportBike sportBike = new SportBike();
+
+            
         }
     }
 }
