@@ -1,0 +1,60 @@
+{
+  "person1": {
+    "name": "Vasiliy",
+    "surname": "Pupkin",
+    "passport": "mr2221133",
+    "birthday": "19.12.1966",
+    "visa": [
+      {
+        "country": "Burkina Faso",
+        "expirationDate": "12.12.2019"
+      },
+      {
+        "country": "Honduras",
+        "expirationDate": "11.11.2018"
+      }
+    ],
+    "baggageWeight": 45,
+    "prohibitedItems": true,
+    "haveTicket" : true 
+  },
+  "person2": {
+    "name": "Helen",
+    "surname": "Golovach",
+    "passport": "mc2123344",
+    "birthday": "13.04.1999",
+    "visa": [
+      {
+        "country": "Schengen Area",
+        "expirationDate": "01.01.2021"
+      }
+    ],
+    "baggageWeight": 22,
+    "prohibitedItems": false,
+    "haveTicket": false
+  },
+  "person3": {
+    "name": "James",
+    "surname": "Bond",
+    "passport": "xx0070077",
+    "birthday": "15.05.1987",
+    "visa": [
+      {
+        "country": "Schengen Area",
+        "expirationDate": "01.01.2200"
+      }
+    ],
+    "baggageWeight": 2,
+    "prohibitedItems": false,
+    "haveTicket": true
+  },
+  "person4": {
+    "name": "Vashen",
+    "surname": "Aganisian",
+    "passport": "",
+    "birthday": "05.01.1976",
+    "baggageWeight": 200,
+    "prohibitedItems": true,,
+    "haveTicket": false
+  }
+}
