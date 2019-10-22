@@ -1,5 +1,5 @@
-{
-  "person1": {
+[
+  {
     "name": "Vasiliy",
     "surname": "Pupkin",
     "passport": "mr2221133",
@@ -16,9 +16,9 @@
     ],
     "baggageWeight": 45,
     "prohibitedItems": true,
-    "haveTicket" : true 
+    "haveTicket": true
   },
-  "person2": {
+  {
     "name": "Helen",
     "surname": "Golovach",
     "passport": "mc2123344",
@@ -33,7 +33,7 @@
     "prohibitedItems": false,
     "haveTicket": false
   },
-  "person3": {
+  {
     "name": "James",
     "surname": "Bond",
     "passport": "xx0070077",
@@ -48,7 +48,7 @@
     "prohibitedItems": false,
     "haveTicket": true
   },
-  "person4": {  
+  {
     "baggageWeight": 200,
     "birthday": "05.01.1976",
     "haveTicket": false,
@@ -57,5 +57,5 @@
     "prohibitedItems": true,
     "surname": "Aganisian",
     "visa": null
-  },
-}
+  }
+]

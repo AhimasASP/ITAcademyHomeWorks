@@ -1,22 +1,22 @@
-{
-  "flight1": {
+[
+  {
     "destTown": "Yerevan",
     "departTime": "12:00",
     "visa": ""
   },
-  "flight2": {
+  {
     "destTown": "London",
     "departTime": "15:05",
     "visa": "Schengen Area"
   },
-  "flight3": {
+  {
     "destTown": "Paris",
     "departTime": "21:00",
     "visa": "Schengen Area"
   },
-  "flight4": {
+  {
     "destTown": "Tegucigalpa",
     "departTime": "15:05",
     "visa": "Honduras"
   }
-}
+]
