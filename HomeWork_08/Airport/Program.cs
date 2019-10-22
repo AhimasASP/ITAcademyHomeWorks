@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Airport
 {
@@ -6,7 +7,15 @@ namespace Airport
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Environment.CurrentDirectory);
+            Console.WriteLine();
+            JsonParser parser = new JsonParser();
+            Person[] persons = parser.getPersonArray();
+
+            foreach (var person in persons)
+            {
+                Console.WriteLine(person.name);
+            }
         }
     }
 }

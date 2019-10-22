@@ -48,13 +48,14 @@
     "prohibitedItems": false,
     "haveTicket": true
   },
-  "person4": {
-    "name": "Vashen",
-    "surname": "Aganisian",
-    "passport": "",
-    "birthday": "05.01.1976",
+  "person4": {  
     "baggageWeight": 200,
-    "prohibitedItems": true,,
-    "haveTicket": false
-  }
+    "birthday": "05.01.1976",
+    "haveTicket": false,
+    "name": "Vashen",
+    "passport": "xxadas",
+    "prohibitedItems": true,
+    "surname": "Aganisian",
+    "visa": null
+  },
 }
