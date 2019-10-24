@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Airport.UI;
 
 namespace Airport
 {
@@ -9,12 +10,13 @@ namespace Airport
         static void Main(string[] args)
         {
             JsonParser parser = new JsonParser();
-            Person[] persons = parser.getPersonArray();
+            //Person[] persons = parser.getPersonArray();
 
-            foreach (var person in persons)
-            {
-                Console.WriteLine(person.name);
-            }
+            MainMenu menu = new MainMenu();
+            menu.ShowMainMenu();
+            menu.ShowClientsLIst();
+
+            
 
         }
     }

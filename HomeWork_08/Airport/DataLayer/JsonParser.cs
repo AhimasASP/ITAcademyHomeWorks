@@ -5,24 +5,24 @@ namespace Airport
 {
     public class JsonParser
     {
-        private readonly Person[] _persons;
-        private readonly Flight[] _flights;
+        //private readonly Person[] _persons;
+        //private readonly Flight[] _flights;
 
 
-        public JsonParser()
+        //public JsonParser()
+        //{
+        //    this._persons = JsonSerializer.Deserialize<Person[]>(File.ReadAllText(ConstantsValues.JsonPath + "Persons.json"));
+        //    this._flights = JsonSerializer.Deserialize<Flight[]>(File.ReadAllText(ConstantsValues.JsonPath + "Flights.json"));
+        //}
+
+        public static Person[] getPersonsArray()
         {
-            this._persons = JsonSerializer.Deserialize<Person[]>(File.ReadAllText(Constants.JsonPath + "Persons.json"));
-            this._flights = JsonSerializer.Deserialize<Flight[]>(File.ReadAllText(Constants.JsonPath + "Flights.json"));
+            return JsonSerializer.Deserialize<Person[]>(File.ReadAllText(ConstantsValues.JsonPath + "Persons.json")); ;
         }
 
-        public Person[] getPersonArray()
+        public static Flight[] getFlightsArray()
         {
-            return _persons;
-        }
-
-        public Flight[] getFlights()
-        {
-            return _flights;
+            return JsonSerializer.Deserialize<Flight[]>(File.ReadAllText(ConstantsValues.JsonPath + "Flights.json")); ;
         }
     }
 }
