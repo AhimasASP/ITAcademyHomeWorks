@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Airport.LogicLayer;
 using Airport.UI;
 
 namespace Airport
@@ -11,13 +12,9 @@ namespace Airport
         {
             JsonParser parser = new JsonParser();
             //Person[] persons = parser.getPersonArray();
-
-            MainMenu menu = new MainMenu();
-            menu.ShowMainMenu();
-            menu.ShowClientsLIst();
-
             
-
+            MainMenuExplorer explorer = new MainMenuExplorer();
+            explorer.GoToMainMenu();
         }
     }
 }

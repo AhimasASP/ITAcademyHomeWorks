@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Airport.UI
 {
@@ -18,15 +19,43 @@ namespace Airport.UI
         public void ShowClientsLIst()
         {
             ushort counter = 1;
-            Console.WriteLine(new string('-', 60) + 
+            Console.WriteLine(new string('-', 57) + 
                               "\n| №  |\t\tClient\t\t|\tBirthday\t|\n" + 
-                              new string('-', 60));
+                              new string('-', 57));
 
             foreach (Person person in JsonParser.getPersonsArray())
             {
-                Console.WriteLine($"| {counter}\t{person.surname}\t{person.name}\t{person.birthday}");
+                Console.WriteLine("| " + counter + "  |\t{0, -10} {1,-15} {2, -20} " + "|", person.name, person.surname,person.birthday);
                 counter++;
             }
+            Console.WriteLine(new string('-', 57));
+        }
+
+        public void ShowFlightList()
+        {
+            ushort counter = 1;
+            Console.WriteLine(new string('-', 51) +
+                              "\n| {0, -1} | {1, -20} | {2, -20} |\n{3} ",new string("№"), new string("Destination"), new string("Departure time"), new string('-', 51));
+            foreach (var flight in JsonParser.getFlightsArray())
+            {
+                Console.WriteLine("| " + counter + " | {0, -20} | {1, -20} |",flight.destTown, flight.departTime);
+                counter++;
+            }
+            Console.WriteLine(new string('-', 51));
+        }
+
+        public void ShowWaitingProcess()
+        {
+            string points = "";
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Clear();
+                Console.WriteLine("Waiting for a new client");
+                Thread.Sleep(500);
+                Console.Clear();
+                Console.WriteLine("Waiting for a new client..");
+            }
+         
         }
     }
 }
