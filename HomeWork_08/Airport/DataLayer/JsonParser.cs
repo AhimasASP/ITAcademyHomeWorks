@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Security.Cryptography;
 using System.Text.Json;
 
 namespace Airport
@@ -23,6 +25,11 @@ namespace Airport
         public static Flight[] getFlightsArray()
         {
             return JsonSerializer.Deserialize<Flight[]>(File.ReadAllText(ConstantsValues.JsonPath + "Flights.json")); ;
+        }
+
+        public Person GetRandomPerson()
+        {
+            int randomCount = Random.Next();
         }
     }
 }

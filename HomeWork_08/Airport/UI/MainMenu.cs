@@ -47,15 +47,19 @@ namespace Airport.UI
         public void ShowWaitingProcess()
         {
             string points = "";
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 20; i++)
             {
                 Console.Clear();
-                Console.WriteLine("Waiting for a new client");
-                Thread.Sleep(500);
-                Console.Clear();
-                Console.WriteLine("Waiting for a new client..");
+                Console.WriteLine("Waiting for a new client" + points);
+                Thread.Sleep(600);
+                points += '.';
+                if (points.Length > 3) points = "";
             }
-         
+        }
+
+        public void ShowWelcomeMenu(Person person)
+        {
+            Console.WriteLine("Hello {0} {1}! Welcome to Airport terminal.\n", person.name, person.surname);
         }
     }
 }

@@ -68,7 +68,9 @@ namespace Airport.LogicLayer
 
         public void GoToWaitingForNewClient()
         {
-             
+            MenuShift();
+            _mainMenu.ShowWaitingProcess();
+            _mainMenu.ShowWelcomeMenu();
         }
     }
 }
