@@ -68,9 +68,16 @@ namespace Airport.LogicLayer
 
         public void GoToWaitingForNewClient()
         {
+            Person person = new Person();
             MenuShift();
             _mainMenu.ShowWaitingProcess();
-            _mainMenu.ShowWelcomeMenu();
+            MenuShift();
+            person = JsonParser.GetRandomPerson();
+            _mainMenu.ShowWelcomeMenu(person);
+            
         }
+
+        //public void 
+
     }
 }
