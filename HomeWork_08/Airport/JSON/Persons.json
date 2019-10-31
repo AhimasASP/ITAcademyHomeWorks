@@ -44,7 +44,7 @@
         "expirationDate": "01.01.2200"
       }
     ],
-    "baggageWeight": 2,
+    "baggageWeight": 10,
     "prohibitedItems": false,
     "haveTicket": true
   },

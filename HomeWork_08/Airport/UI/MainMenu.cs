@@ -13,7 +13,8 @@ namespace Airport.UI
         {
             Console.WriteLine("Current time: " + ConstantsValues.CurrentTime() + 
                               "\nPlease choose the action\n" + 
-                              "1. Show clients list;\n2. Show flights list;\n3. Wait for a new client.");
+                              "1. Show clients list;\n2. Show flights list;" +
+                              "\n3. Wait for a new client;\n4. Exit.");
         }
 
         public void ShowClientsLIst()
@@ -47,7 +48,7 @@ namespace Airport.UI
         public void ShowWaitingProcess()
         {
             string points = "";
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.Clear();
                 Console.WriteLine("Waiting for a new client" + points);
@@ -60,6 +61,27 @@ namespace Airport.UI
         public void ShowWelcomeMenu(Person person)
         {
             Console.WriteLine("Hello {0} {1}! Welcome to Airport terminal.\n", person.name, person.surname);
+        }
+
+        public void ShowBuyingTicketMenu()
+        {
+            Console.WriteLine("Welcome to ticket shop\nNow you can buy a new ticket.\nDo you have enough money?" );
+        }
+
+        public void ShowPassportControl()
+        {
+            Console.WriteLine("Welcome to passport control\nPlease present you passport for check.");
+        }
+
+        public void ShowEnterEscMenu()
+        {
+            Console.WriteLine("If positive press \"Enter\", and press \"Esq\" if your answer is negative.");
+        }
+
+        public void ShowOverWeightNotification()
+        {
+            Console.WriteLine("You luggage weight so much! You must pay for overweight!\nDo you want to pay for your luggage?");
+            ShowEnterEscMenu();
         }
     }
 }

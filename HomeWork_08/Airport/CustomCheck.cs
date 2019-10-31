@@ -1,6 +1,6 @@
 ﻿namespace Airport
 {
-    public class CheckIn
+    public class CustomCheck
     {
         
     }

@@ -15,6 +15,7 @@ namespace Airport
             
             MainMenuExplorer explorer = new MainMenuExplorer();
             explorer.GoToMainMenu();
+            
         }
     }
 }
