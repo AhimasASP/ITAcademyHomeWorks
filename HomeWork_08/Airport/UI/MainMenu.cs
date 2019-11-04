@@ -75,7 +75,7 @@ namespace Airport.UI
 
         public void ShowEnterEscMenu()
         {
-            Console.WriteLine("If positive press \"Enter\", and press \"Esq\" if your answer is negative.");
+            Console.WriteLine("If positive press \"Enter\", and press \"Esc\" if your answer is negative.");
         }
 
         public void ShowOverWeightNotification()

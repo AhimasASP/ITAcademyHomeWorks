@@ -10,6 +10,11 @@ namespace Airport.LogicLayer
         private bool _correctChoice = false;
         private string _errorMessage = "";
 
+        public delegate void YesNoTool();
+        public delegate void YesAction();
+        public delegate void NoAction();
+
+
         private void MenuShift()
         {
             Console.Clear();
@@ -80,42 +85,56 @@ namespace Airport.LogicLayer
             MenuShift();
             _mainMenu.ShowWaitingProcess();
             person = JsonParser.GetRandomPerson();
-            
+
             if (person.haveTicket)
             {
                 MenuShift();
                 _mainMenu.ShowWelcomeMenu(person);
                 Console.WriteLine("Ok! You have a ticket!\nPlease go to passport control.");
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
                 GoToPassportControl(person);
             }
             else
             {
-                ConsoleKey key = ConsoleKey.F19;
-                while (key != ConsoleKey.Enter && key != ConsoleKey.Escape)
+                MenuShift();
+                _mainMenu.ShowWelcomeMenu(person);
+                YesNoTool tool = _mainMenu.ShowBuyingTicketMenu;
+                tool += _mainMenu.ShowEnterEscMenu;
+                YesAction yesAction = delegate { Console.WriteLine("OK! Now you have a ticket! Please go to passport control."); };
+                NoAction noAction = delegate { Console.WriteLine("! Sorry you can't uses our services without any ticket. Please come back latter.\nGood Luck to you!"); };
+                
+                if (EnterEscapeMenu(tool, yesAction, noAction, "Please, enter the right choice!"))
                 {
-                    MenuShift();
-                    _mainMenu.ShowWelcomeMenu(person);
-                    _mainMenu.ShowBuyingTicketMenu();
-                    _mainMenu.ShowEnterEscMenu();
-                    Console.WriteLine(_errorMessage);
-                    key = Console.ReadKey().Key;
-
-                    if (key == ConsoleKey.Enter)
-                    {
-                        Console.WriteLine("OK! Now you have a ticket! Please go to passport control.");
-                        Thread.Sleep(2000);
-                        GoToPassportControl(person);
-                    }
-
-                    if (key == ConsoleKey.Escape)
-                    {
-                        Console.WriteLine("Sorry you can't uses our services without any ticket. Please come back latter.\nGood Luck to you!");
-                        Thread.Sleep(2000);
-                        GoToMainMenu();
-                    }
+                    GoToPassportControl(person);
                 }
             }
+        }
+
+        public bool EnterEscapeMenu(YesNoTool tool, YesAction yes, NoAction no, string error)
+        {
+            ConsoleKey key = ConsoleKey.F19;
+            while (key != ConsoleKey.Enter && key != ConsoleKey.Escape)
+            {
+                tool.Invoke();
+                Console.WriteLine(_errorMessage);
+                key = Console.ReadKey().Key;
+                if (key == ConsoleKey.Enter)
+                {
+                    yes.Invoke();
+                    Thread.Sleep(3000);
+                    return true;
+                }
+
+                if (key == ConsoleKey.Escape)
+                {
+                    no.Invoke();
+                    GoBack();
+                }
+                _errorMessage = error;
+                MenuShift();
+            }
+            _errorMessage = "";
+            return false;
         }
 
         public void GoToPassportControl(Person person)
@@ -125,14 +144,13 @@ namespace Airport.LogicLayer
             if (PassportControl.CheckForValidPassport(person))
             {
                 Console.WriteLine("All is right! Please present your luggage for control.");
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
                 GoToLuggageControl(person);
             }
             else
             {
                 Console.WriteLine("Sorry, your passport invalid, you can't uses our services.\nGood bye");
-                Thread.Sleep(2000);
-                GoToMainMenu();
+                GoBack();
             }
         }
 
