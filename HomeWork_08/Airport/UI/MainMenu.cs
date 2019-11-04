@@ -83,5 +83,15 @@ namespace Airport.UI
             Console.WriteLine("You luggage weight so much! You must pay for overweight!\nDo you want to pay for your luggage?");
             ShowEnterEscMenu();
         }
+
+        public void ShowSuccessLuggageControlResult()
+        {
+            Console.WriteLine("Ok! All is right, no you can follow to custom control to check your visa.");
+        }
+        public void ShowProhibitedItemsEnables(Person person)
+        {
+            Console.WriteLine($"Alarm for security office! The prohibited items there!\n" +
+                              $"{person.name} {person.surname} please follow to security office to deep control!");
+        }
     }
 }

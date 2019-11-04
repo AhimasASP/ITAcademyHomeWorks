@@ -99,11 +99,10 @@ namespace Airport.LogicLayer
                 MenuShift();
                 _mainMenu.ShowWelcomeMenu(person);
                 YesNoTool tool = _mainMenu.ShowBuyingTicketMenu;
-                tool += _mainMenu.ShowEnterEscMenu;
-                YesAction yesAction = delegate { Console.WriteLine("OK! Now you have a ticket! Please go to passport control."); };
-                NoAction noAction = delegate { Console.WriteLine("! Sorry you can't uses our services without any ticket. Please come back latter.\nGood Luck to you!"); };
+                YesAction yesAction = delegate { Console.WriteLine("\nOK! Now you have a ticket! Please go to passport control."); };
+                NoAction noAction = delegate { Console.WriteLine("\nSorry you can't uses our services without any ticket. Please come back latter.\nGood Luck to you!"); };
                 
-                if (EnterEscapeMenu(tool, yesAction, noAction, "Please, enter the right choice!"))
+                if (EnterEscapeMenu(tool, yesAction, noAction, ConstantsValues.ErrorMessage))
                 {
                     GoToPassportControl(person);
                 }
@@ -116,6 +115,7 @@ namespace Airport.LogicLayer
             while (key != ConsoleKey.Enter && key != ConsoleKey.Escape)
             {
                 tool.Invoke();
+                _mainMenu.ShowEnterEscMenu();
                 Console.WriteLine(_errorMessage);
                 key = Console.ReadKey().Key;
                 if (key == ConsoleKey.Enter)
@@ -128,6 +128,7 @@ namespace Airport.LogicLayer
                 if (key == ConsoleKey.Escape)
                 {
                     no.Invoke();
+                    Thread.Sleep(3000);
                     GoBack();
                 }
                 _errorMessage = error;
@@ -143,7 +144,7 @@ namespace Airport.LogicLayer
             _mainMenu.ShowPassportControl();
             if (PassportControl.CheckForValidPassport(person))
             {
-                Console.WriteLine("All is right! Please present your luggage for control.");
+                Console.WriteLine("All is right! Now you should go to luggage control.");
                 Thread.Sleep(3000);
                 GoToLuggageControl(person);
             }
@@ -156,7 +157,52 @@ namespace Airport.LogicLayer
 
         public void GoToLuggageControl(Person person)
         {
+            YesNoTool tool = delegate
+            {
+                Console.WriteLine($"Dear {person.name} {person.surname} please, let us check your luggage.");
+            };
+
+            YesAction yseAction = delegate
+            {
+                Console.WriteLine("Ok! wait for a few minutes, we start to check your luggage.");
+            };
+
+            NoAction noAction = delegate
+            {
+                Console.WriteLine(
+                    $"Sorry dear {person.name} {person.surname} you can't use our services without this stage of luggage control." +
+                    $"\nPlease come back later");
+            };
+
+            if (!EnterEscapeMenu(tool, yseAction, noAction, ConstantsValues.ErrorMessage))
+            {
+                GoBack();
+            }
+
+            tool = _mainMenu.ShowOverWeightNotification;
+            yseAction = delegate
+            {
+                Console.WriteLine("Ok, all right. Now we check your luggage for a prohibited items");
+            };
+
+            if (!EnterEscapeMenu(tool, yseAction, noAction, ConstantsValues.ErrorMessage))
+            {
+                GoBack();
+                return;
+            }
+            if (person.baggageWeight > ConstantsValues.AcceptedWeight)
+            {
+                    _mainMenu.ShowSuccessLuggageControlResult();
+            }
+            if (person.prohibitedItems)
+            {
+                _mainMenu.ShowProhibitedItemsEnables(person);
+                GoBack();
+                return;
+            }
 
         }
+
+
     }
 }
