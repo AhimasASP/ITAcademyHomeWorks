@@ -101,7 +101,7 @@ namespace Airport.LogicLayer
                 YesNoTool tool = _mainMenu.ShowBuyingTicketMenu;
                 YesAction yesAction = delegate { Console.WriteLine("\nOK! Now you have a ticket! Please go to passport control."); };
                 NoAction noAction = delegate { Console.WriteLine("\nSorry you can't uses our services without any ticket. Please come back latter.\nGood Luck to you!"); };
-                
+
                 if (EnterEscapeMenu(tool, yesAction, noAction, ConstantsValues.ErrorMessage))
                 {
                     GoToPassportControl(person);
@@ -157,6 +157,8 @@ namespace Airport.LogicLayer
 
         public void GoToLuggageControl(Person person)
         {
+            #region LuggageCheckSuggestion
+
             YesNoTool tool = delegate
             {
                 Console.WriteLine($"Dear {person.name} {person.surname} please, let us check your luggage.");
@@ -177,32 +179,39 @@ namespace Airport.LogicLayer
             if (!EnterEscapeMenu(tool, yseAction, noAction, ConstantsValues.ErrorMessage))
             {
                 GoBack();
-            }
-
-            tool = _mainMenu.ShowOverWeightNotification;
-            yseAction = delegate
-            {
-                Console.WriteLine("Ok, all right. Now we check your luggage for a prohibited items");
-            };
-
-            if (!EnterEscapeMenu(tool, yseAction, noAction, ConstantsValues.ErrorMessage))
-            {
-                GoBack();
                 return;
             }
+
+            #endregion
+
             if (person.baggageWeight > ConstantsValues.AcceptedWeight)
             {
-                    _mainMenu.ShowSuccessLuggageControlResult();
+                tool = _mainMenu.ShowOverWeightNotification;
+                yseAction = delegate
+                {
+                    Console.WriteLine("Ok, all right. Now we will check your luggage for a prohibited items");
+                };
+
+                if (!EnterEscapeMenu(tool, yseAction, noAction, ConstantsValues.ErrorMessage))
+                {
+                    GoBack();
+                    return;
+                }
             }
+
             if (person.prohibitedItems)
             {
                 _mainMenu.ShowProhibitedItemsEnables(person);
                 GoBack();
                 return;
             }
+            else
+            {
 
+            }
+
+            _mainMenu.ShowSuccessLuggageControlResult();
         }
-
-
+        
     }
 }
