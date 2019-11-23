@@ -1,0 +1,22 @@
+[
+  {
+    "destTown": "Yerevan",
+    "departTime": "12:00",
+    "visa": ""
+  },
+  {
+    "destTown": "London",
+    "departTime": "15:05",
+    "visa": "Schengen Area"
+  },
+  {
+    "destTown": "Paris",
+    "departTime": "21:00",
+    "visa": "Schengen Area"
+  },
+  {
+    "destTown": "Tegucigalpa",
+    "departTime": "15:05",
+    "visa": "Honduras"
+  }
+]

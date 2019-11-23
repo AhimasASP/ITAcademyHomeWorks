@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "HW_03_Task_04/1.0.0": {
+        "dependencies": {
+          "HW_03_Task_03": "1.0.0"
+        },
+        "runtime": {
+          "HW_03_Task_04.dll": {}
+        }
+      },
+      "HW_03_Task_01/1.0.0": {
+        "runtime": {
+          "HW_03_Task_01.dll": {}
+        }
+      },
+      "HW_03_Task_03/1.0.0": {
+        "dependencies": {
+          "HW_03_Task_01": "1.0.0"
+        },
+        "runtime": {
+          "HW_03_Task_03.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HW_03_Task_04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW_03_Task_01/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HW_03_Task_03/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

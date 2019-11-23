@@ -1,0 +1,15 @@
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_04.deps.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_04.runtimeconfig.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_04.runtimeconfig.dev.json
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_04.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_04.pdb
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_01.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_03.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_03.pdb
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\bin\Debug\netcoreapp2.2\HW_03_Task_01.pdb
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.csprojAssemblyReference.cache
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.AssemblyInfoInputs.cache
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.AssemblyInfo.cs
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.csproj.CopyComplete
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.dll
+E:\Projects\C#\IT-Academy\ITAcademyHomeWorks\HomeWork_03\HW_03_Task_04\obj\Debug\netcoreapp2.2\HW_03_Task_04.pdb
